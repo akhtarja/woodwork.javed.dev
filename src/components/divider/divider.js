@@ -15,7 +15,6 @@ const Divider = () => {
   return (
     <DividerWrapper>
       <FontAwesomeIcon icon={faEllipsisH} size="2x" />
-      <FontAwesomeIcon icon={faEllipsisH} size="2x" />
     </DividerWrapper>
   )
 }
