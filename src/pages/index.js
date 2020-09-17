@@ -7,6 +7,8 @@ import Divider from "../components/divider"
 
 import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery"
 import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery"
+import useLiveEdgeBenchGallery from "../hooks/useLiveEdgeBenchGallery"
+import useFloatingCoffeeTableGallery from "../hooks/useFloatingCoffeeTableGallery"
 
 import SEO from "../components/seo"
 
@@ -23,6 +25,17 @@ const IndexPage = () => (
 
     <GalleryLabel title="Floating wall shelves" subtitle="White oak" />
     <Gallery useGallery={useFloatingShelvesGallery} />
+    <Divider />
+
+    <GalleryLabel title="Live edge bench" subtitle="Black walnut, maple" />
+    <Gallery useGallery={useLiveEdgeBenchGallery} />
+    <Divider />
+
+    <GalleryLabel
+      title="Floating top coffee table"
+      subtitle="Black walnut, ash"
+    />
+    <Gallery useGallery={useFloatingCoffeeTableGallery} />
     <Divider />
   </Layout>
 )
