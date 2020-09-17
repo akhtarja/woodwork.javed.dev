@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import * as React from "react"
+import PropTypes from "prop-types"
 import { jsx } from "theme-ui"
 import Img from "gatsby-image"
 import { Lightbox } from "react-modal-image"
-import useGallery from "../hooks/useGallery"
 import Grid from "./Grid"
 import Tile from "./Tile"
 
@@ -22,7 +22,7 @@ const imgStyles: any = {
   },
 }
 
-const Gallery = () => {
+const Gallery = ({ useGallery }) => {
   const images = useGallery()
   const [showImageIndex, setShowImageIndex] = React.useState<
     number | undefined
@@ -53,6 +53,10 @@ const Gallery = () => {
       )}
     </div>
   )
+}
+
+Gallery.propTypes = {
+  useGallery: PropTypes.func.isRequired,
 }
 
 export default Gallery

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 import Image from "./image"
@@ -17,9 +16,7 @@ const Header = () => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <Link to="/">
-        <Image />
-      </Link>
+      <Image />
     </div>
   </header>
 )

@@ -17,5 +17,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-theme-gallery`,
+    `gatsby-plugin-emotion`,
   ],
 }
