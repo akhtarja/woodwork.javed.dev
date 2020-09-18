@@ -1,6 +1,6 @@
 # woodwork.javed.dev
 
-This repository contains the codebase for https://blog.javed.dev.
+This repository contains the codebase for https://woodwork.javed.dev.
 
 This project was built with [GatsbyJS](https://www.gatsbyjs.org/).
 
