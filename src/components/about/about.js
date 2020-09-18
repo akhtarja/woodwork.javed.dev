@@ -1,13 +1,8 @@
 import React from "react"
-import styled from "@emotion/styled"
-
-const AboutWrapper = styled.div`
-  font-family: courier;
-`
 
 const About = () => {
   return (
-    <AboutWrapper>
+    <div className="about">
       <p>
         I am a furniture designer and woodworker based in Vancouver, British
         Columbia, Canada. My work is modern but grounded in centuries of
@@ -17,7 +12,7 @@ const About = () => {
       </p>
 
       <p>I am currently unavailable for commission work.</p>
-    </AboutWrapper>
+    </div>
   )
 }
 
