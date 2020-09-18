@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Woodwork" />
 
     <GalleryLabel
       title="Cabinet with shōji screen doors"
