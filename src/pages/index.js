@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import GalleryLabel from "../components/galleryLabel"
 import { Gallery } from "gatsby-theme-gallery"
 import Divider from "../components/divider"
+import About from "../components/about"
 
 import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery"
 import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery"
@@ -28,6 +29,9 @@ const IndexPage = () => (
 
     <GalleryLabel title="Live edge bench" subtitle="Black walnut, maple" />
     <Gallery useGallery={useLiveEdgeBenchGallery} />
+    <Divider />
+
+    <About />
     <Divider />
   </Layout>
 )
