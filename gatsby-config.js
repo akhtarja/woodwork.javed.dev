@@ -20,7 +20,12 @@ module.exports = {
         bucketName: process.env.WOODWORK_JAVED_DEV_BUCKET_NAME,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        icon: `src/images/gatsby-icon.png`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-theme-gallery`,
     `gatsby-plugin-emotion`,
