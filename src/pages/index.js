@@ -9,6 +9,7 @@ import About from "../components/about"
 import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery"
 import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery"
 import useLiveEdgeBenchGallery from "../hooks/useLiveEdgeBenchGallery"
+import useVinylRecordStorageShelfGallery from "../hooks/useVinylRecordStorageShelfGallery"
 
 import SEO from "../components/seo"
 
@@ -21,6 +22,13 @@ const IndexPage = () => (
       subtitle="White oak, black walnut, basswood"
     />
     <Gallery useGallery={useOfficeCabinetGallery} />
+    <Divider />
+
+    <GalleryLabel
+      title="Vinyl Record Storage Shelf"
+      subtitle="White oak, black walnut"
+    />
+    <Gallery useGallery={useVinylRecordStorageShelfGallery} />
     <Divider />
 
     <GalleryLabel title="Floating wall shelves" subtitle="White oak" />
