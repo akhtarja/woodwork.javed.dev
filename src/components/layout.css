@@ -725,6 +725,10 @@ pre tt:after {
   font-family: courier;
 }
 
+.__react_modal_image__header {
+  width: 100px !important;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
