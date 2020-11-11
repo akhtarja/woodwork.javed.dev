@@ -45,6 +45,7 @@ const Gallery = ({ useGallery }) => {
       {showImageIndex !== undefined && (
         <Lightbox
           hideDownload={true}
+          hideZoom={true}
           large={images[showImageIndex].publicURL}
           onClose={() => {
             setShowImageIndex(undefined)

@@ -726,7 +726,7 @@ pre tt:after {
 }
 
 .__react_modal_image__header {
-  width: 100px !important;
+  width: 35px !important;
 }
 
 @media only screen and (max-width: 480px) {
