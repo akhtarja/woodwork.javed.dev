@@ -42,8 +42,7 @@
     "clean": "gatsby clean",
     "deploy": "gatsby-plugin-s3 deploy",
     "invalidate": "aws cloudfront create-invalidation --distribution-id $WOODWORK_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\"",
-    "deploy:cd": "gatsby-plugin-s3 deploy -y",
-    "invalidate:cd": "aws cloudfront create-invalidation --distribution-id $WOODWORK_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\" --invalidation-batch file://invalidation-batch.json | > /dev/null"
+    "deploy:cd": "gatsby-plugin-s3 deploy -y"
   },
   "repository": {
     "type": "git",
