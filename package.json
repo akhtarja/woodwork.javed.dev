@@ -16,7 +16,7 @@
     "gatsby-plugin-manifest": "^2.4.14",
     "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-react-helmet": "^3.3.6",
-    "gatsby-plugin-s3": "^0.3.5",
+    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-theme-gallery": "^1.0.2",
@@ -40,7 +40,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby-plugin-s3 deploy && aws cloudfront create-invalidation --distribution-id $WOODWORK_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\""
+    "deploy": "gatsby-plugin-s3 deploy",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id $WOODWORK_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\"",
+    "deploy:cd": "gatsby-plugin-s3 deploy -y"
   },
   "repository": {
     "type": "git",
