@@ -25,7 +25,7 @@ const IndexPage = () => (
     <Divider />
 
     <GalleryLabel
-      title="Vinyl Record Storage Shelf"
+      title="Vinyl Record Storage"
       subtitle="White oak, black walnut"
     />
     <Gallery useGallery={useVinylRecordStorageShelfGallery} />
