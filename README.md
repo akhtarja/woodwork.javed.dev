@@ -1,5 +1,7 @@
 # woodwork.javed.dev
 
+![Deployment status](https://github.com/akhtarja/woodwork.javed.dev/workflows/gatsby-deploy/badge.svg)
+
 This repository contains the codebase for https://woodwork.javed.dev.
 
 This project was built with [GatsbyJS](https://www.gatsbyjs.org/).
