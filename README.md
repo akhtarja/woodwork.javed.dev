@@ -28,28 +28,15 @@ This project has [ESLint](https://eslint.org/) to lint JavaScript and React, and
 
     _Note: You'll also see a second link: _`http://localhost:4800/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-## 🏗 Creating an Optimized Production Build
-
-```
-npm run build
-npm run serve
-```
-
-Your production-ready site is now running at `http://localhost:9000`. The site assets are located in the `public` folder.
-
 ## ⚙️ Deploying to Amazon Web Services
 
-The site is hosted in an S3 bucket in AWS, with a CloudFront distribution in front of it. The deployment process expects two enxironment variables:
+The deployment process expects two environment variables in the repository's secrets store:
 
 | Variable name                      | Description                                                                                          |
 | :--------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | `WOODWORK_JAVED_DEV_BUCKET_NAME`   | The name of the Amazon S3 bucket to deploy to. This bucket should be set up to host a static website |
 | `WOODWORK_JAVED_DEV_CLOUDFRONT_ID` | The distribution ID of the site's Cloudfront distribution.                                           |
+| `AWS_ACCESS_KEY_ID`                | The access key ID for a target AWS environment for hosting.                                          |
+| `AWS_SECRET_ACCESS_KEY`            | The secret access key for a target AWS environment for hosting.                                      |
 
-With both environment variables set:
-
-```sh
-npm run deploy
-```
-
-You will be asked to confirm, and the deployment will begin. Once complete, the script will invalidate the CloudFront distribution's cache. Press `q` to exit once you see the results.
+The site is hosted in an S3 bucket in AWS, with a CloudFront distribution in front of it. When a pull request is merged to the `master` branch, the GitHub Actions pipeline will deploy it to AWS and invalidate the CloudFront distribution cache. This progress can be monitored from the `Actions` tab.
