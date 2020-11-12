@@ -19,5 +19,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: npm install -g eslint
+      - run: npm install
       - run: eslint src/pages/*.js
       - run: eslint src/components
