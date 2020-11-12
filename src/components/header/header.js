@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Image from "./image"
+import Image from "./image";
 
 const Header = () => (
   <header
@@ -22,6 +22,6 @@ const Header = () => (
       </Link>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;

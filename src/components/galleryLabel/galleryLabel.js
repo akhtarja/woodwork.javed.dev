@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
 const GalleryLabel = ({ title, subtitle }) => {
   return (
@@ -7,12 +7,12 @@ const GalleryLabel = ({ title, subtitle }) => {
       <h2>{title}</h2>
       <h5>{subtitle}</h5>
     </div>
-  )
-}
+  );
+};
 
 GalleryLabel.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-}
+};
 
-export default GalleryLabel
+export default GalleryLabel;

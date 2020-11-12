@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
 
       <p>I am currently unavailable for commission work.</p>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
