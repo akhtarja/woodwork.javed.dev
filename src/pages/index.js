@@ -1,17 +1,17 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import GalleryLabel from "../components/galleryLabel"
-import { Gallery } from "gatsby-theme-gallery"
-import Divider from "../components/divider"
-import About from "../components/about"
+import Layout from "../components/layout";
+import GalleryLabel from "../components/galleryLabel";
+import { Gallery } from "gatsby-theme-gallery";
+import Divider from "../components/divider";
+import About from "../components/about";
 
-import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery"
-import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery"
-import useLiveEdgeBenchGallery from "../hooks/useLiveEdgeBenchGallery"
-import useVinylRecordStorageShelfGallery from "../hooks/useVinylRecordStorageShelfGallery"
+import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery";
+import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery";
+import useLiveEdgeBenchGallery from "../hooks/useLiveEdgeBenchGallery";
+import useVinylRecordStorageShelfGallery from "../hooks/useVinylRecordStorageShelfGallery";
 
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
@@ -42,6 +42,6 @@ const IndexPage = () => (
     <About />
     <Divider />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
