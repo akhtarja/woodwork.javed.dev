@@ -1,10 +1,10 @@
-name: gatsby-build
+name: test
 on:
   push:
     branches-ignore:
       - master
 jobs:
-  test-build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,3 +13,12 @@ jobs:
       - run: npm run build
         env:
           WOODWORK_JAVED_DEV_BUCKET_NAME: ${{ secrets.WOODWORK_JAVED_DEV_BUCKET_NAME }}
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g eslint
+      - run: npm install
+      - run: eslint src/pages/*.js --max-warnings=0
+      - run: eslint src/components --max-warnings=0
