@@ -13,6 +13,7 @@ import Footer from "./footer";
 import "./layout.css";
 
 const Layout = ({ children }) => {
+  const a = 0;
   return (
     <>
       <Header />
