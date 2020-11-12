@@ -20,5 +20,5 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g eslint
       - run: npm install
-      - run: eslint src/pages/*.js
-      - run: eslint src/components
+      - run: eslint src/pages/*.js --max-warnings=0
+      - run: eslint src/components --max-warnings=0

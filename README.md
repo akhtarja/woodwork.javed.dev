@@ -1,5 +1,6 @@
 # woodwork.javed.dev
 
+[![Test status](https://github.com/akhtarja/woodwork.javed.dev/workflows/test/badge.svg)](https://github.com/akhtarja/woodwork.javed.dev/actions)
 [![Deployment status](https://github.com/akhtarja/woodwork.javed.dev/workflows/gatsby-deploy/badge.svg)](https://github.com/akhtarja/woodwork.javed.dev/actions)
 
 This repository contains the codebase for https://woodwork.javed.dev.
