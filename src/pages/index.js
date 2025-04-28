@@ -6,6 +6,7 @@ import { Gallery } from "gatsby-theme-gallery";
 import Divider from "../components/divider";
 import About from "../components/about";
 
+import useNightstandsGallery from "../hooks/useNightstandsGallery";
 import useOfficeCabinetGallery from "../hooks/useOfficeCabinetGallery";
 import useFloatingShelvesGallery from "../hooks/useFloatingShelvesGallery";
 import useLiveEdgeBenchGallery from "../hooks/useLiveEdgeBenchGallery";
@@ -18,7 +19,14 @@ const IndexPage = () => (
     <SEO title="Woodwork" />
 
     <GalleryLabel
-      title="Cabinet with shōji screen doors"
+      title="Nightstands"
+      subtitle="White oak, black walnut, basswood"
+    />
+    <Gallery useGallery={useNightstandsGallery} />
+    <Divider />
+
+    <GalleryLabel
+      title="Free-standing cabinet"
       subtitle="White oak, black walnut, basswood"
     />
     <Gallery useGallery={useOfficeCabinetGallery} />
